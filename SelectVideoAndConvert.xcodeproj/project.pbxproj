@@ -15,6 +15,13 @@
 		4A4799261D2A5FEC0037A9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4799241D2A5FEC0037A9DD /* LaunchScreen.storyboard */; };
 		4A4799311D2A5FEC0037A9DD /* SelectVideoAndConvertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4799301D2A5FEC0037A9DD /* SelectVideoAndConvertTests.m */; };
 		4A47993C1D2A5FEC0037A9DD /* SelectVideoAndConvertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A47993B1D2A5FEC0037A9DD /* SelectVideoAndConvertUITests.m */; };
+		4A4799561D2A5FFF0037A9DD /* add_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A47994A1D2A5FFF0037A9DD /* add_01@2x.png */; };
+		4A4799571D2A5FFF0037A9DD /* add_01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A47994B1D2A5FFF0037A9DD /* add_01@3x.png */; };
+		4A4799581D2A5FFF0037A9DD /* GCMAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A47994D1D2A5FFF0037A9DD /* GCMAssetModel.m */; };
+		4A4799591D2A5FFF0037A9DD /* GCMAssetsGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A47994F1D2A5FFF0037A9DD /* GCMAssetsGroupController.m */; };
+		4A47995A1D2A5FFF0037A9DD /* GCMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4799511D2A5FFF0037A9DD /* GCMCollectionViewController.m */; };
+		4A47995B1D2A5FFF0037A9DD /* GCMGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4799531D2A5FFF0037A9DD /* GCMGroupCell.m */; };
+		4A47995C1D2A5FFF0037A9DD /* GCMImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4799551D2A5FFF0037A9DD /* GCMImagePickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,18 @@
 		4A4799371D2A5FEC0037A9DD /* SelectVideoAndConvertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectVideoAndConvertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A47993B1D2A5FEC0037A9DD /* SelectVideoAndConvertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectVideoAndConvertUITests.m; sourceTree = "<group>"; };
 		4A47993D1D2A5FEC0037A9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A47994A1D2A5FFF0037A9DD /* add_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_01@2x.png"; sourceTree = "<group>"; };
+		4A47994B1D2A5FFF0037A9DD /* add_01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_01@3x.png"; sourceTree = "<group>"; };
+		4A47994C1D2A5FFF0037A9DD /* GCMAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMAssetModel.h; sourceTree = "<group>"; };
+		4A47994D1D2A5FFF0037A9DD /* GCMAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMAssetModel.m; sourceTree = "<group>"; };
+		4A47994E1D2A5FFF0037A9DD /* GCMAssetsGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMAssetsGroupController.h; sourceTree = "<group>"; };
+		4A47994F1D2A5FFF0037A9DD /* GCMAssetsGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMAssetsGroupController.m; sourceTree = "<group>"; };
+		4A4799501D2A5FFF0037A9DD /* GCMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMCollectionViewController.h; sourceTree = "<group>"; };
+		4A4799511D2A5FFF0037A9DD /* GCMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMCollectionViewController.m; sourceTree = "<group>"; };
+		4A4799521D2A5FFF0037A9DD /* GCMGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMGroupCell.h; sourceTree = "<group>"; };
+		4A4799531D2A5FFF0037A9DD /* GCMGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMGroupCell.m; sourceTree = "<group>"; };
+		4A4799541D2A5FFF0037A9DD /* GCMImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMImagePickerController.h; sourceTree = "<group>"; };
+		4A4799551D2A5FFF0037A9DD /* GCMImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMImagePickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +120,7 @@
 		4A4799151D2A5FEC0037A9DD /* SelectVideoAndConvert */ = {
 			isa = PBXGroup;
 			children = (
+				4A4799491D2A5FFF0037A9DD /* GCMImagePicker */,
 				4A4799191D2A5FEC0037A9DD /* AppDelegate.h */,
 				4A47991A1D2A5FEC0037A9DD /* AppDelegate.m */,
 				4A47991C1D2A5FEC0037A9DD /* ViewController.h */,
@@ -138,6 +158,25 @@
 				4A47993D1D2A5FEC0037A9DD /* Info.plist */,
 			);
 			path = SelectVideoAndConvertUITests;
+			sourceTree = "<group>";
+		};
+		4A4799491D2A5FFF0037A9DD /* GCMImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4A47994A1D2A5FFF0037A9DD /* add_01@2x.png */,
+				4A47994B1D2A5FFF0037A9DD /* add_01@3x.png */,
+				4A47994C1D2A5FFF0037A9DD /* GCMAssetModel.h */,
+				4A47994D1D2A5FFF0037A9DD /* GCMAssetModel.m */,
+				4A47994E1D2A5FFF0037A9DD /* GCMAssetsGroupController.h */,
+				4A47994F1D2A5FFF0037A9DD /* GCMAssetsGroupController.m */,
+				4A4799501D2A5FFF0037A9DD /* GCMCollectionViewController.h */,
+				4A4799511D2A5FFF0037A9DD /* GCMCollectionViewController.m */,
+				4A4799521D2A5FFF0037A9DD /* GCMGroupCell.h */,
+				4A4799531D2A5FFF0037A9DD /* GCMGroupCell.m */,
+				4A4799541D2A5FFF0037A9DD /* GCMImagePickerController.h */,
+				4A4799551D2A5FFF0037A9DD /* GCMImagePickerController.m */,
+			);
+			path = GCMImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4799571D2A5FFF0037A9DD /* add_01@3x.png in Resources */,
 				4A4799261D2A5FEC0037A9DD /* LaunchScreen.storyboard in Resources */,
 				4A4799231D2A5FEC0037A9DD /* Assets.xcassets in Resources */,
 				4A4799211D2A5FEC0037A9DD /* Main.storyboard in Resources */,
+				4A4799561D2A5FFF0037A9DD /* add_01@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A47991E1D2A5FEC0037A9DD /* ViewController.m in Sources */,
+				4A47995C1D2A5FFF0037A9DD /* GCMImagePickerController.m in Sources */,
 				4A47991B1D2A5FEC0037A9DD /* AppDelegate.m in Sources */,
+				4A47995A1D2A5FFF0037A9DD /* GCMCollectionViewController.m in Sources */,
+				4A47995B1D2A5FFF0037A9DD /* GCMGroupCell.m in Sources */,
+				4A4799591D2A5FFF0037A9DD /* GCMAssetsGroupController.m in Sources */,
+				4A4799581D2A5FFF0037A9DD /* GCMAssetModel.m in Sources */,
 				4A4799181D2A5FEC0037A9DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelectVideoAndConvert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Vilang.SelectVideoAndConvert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelectVideoAndConvert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Vilang.SelectVideoAndConvert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
