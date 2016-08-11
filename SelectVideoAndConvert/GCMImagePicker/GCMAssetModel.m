@@ -37,9 +37,12 @@
     
     //转码配置
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:model.imageURL options:nil];
+    
+    //AVAssetExportPresetMediumQuality可以更改，是枚举类型，官方有提供，更改该值可以改变视频的压缩比例
     AVAssetExportSession *exportSession= [[AVAssetExportSession alloc] initWithAsset:asset presetName:AVAssetExportPresetMediumQuality];
     exportSession.shouldOptimizeForNetworkUse = YES;
     exportSession.outputURL = [NSURL fileURLWithPath:model.sandboxPath];
+    //AVFileTypeMPEG4 文件输出类型，可以更改，是枚举类型，官方有提供，更改该值也可以改变视频的压缩比例
     exportSession.outputFileType = AVFileTypeMPEG4;
     [exportSession exportAsynchronouslyWithCompletionHandler:^{
         int exportStatus = exportSession.status;

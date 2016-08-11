@@ -28,20 +28,38 @@
     videoModelArray = [NSMutableArray array];
 }
 
+
+
+
+
+
+
+
+//触发方法
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     GCMImagePickerController *picker = [[GCMImagePickerController alloc] init];
-    
     //返回选中的原图
     [picker setDidFinishSelectImageModels:^(NSMutableArray *models) {
         NSLog(@"原图%@",models);
         for (GCMAssetModel *videoModel in models) {
            videoModel.fileName = [NSString stringWithFormat:@"%ld.mp4",RandomNum];
+            
+            //转码压缩存储至本地（如果想修改存储路径和压缩比例看方法内部）
             [videoModel convertVideoWithModel:videoModel];
+            
+            //所有数据都在模型数组里，想要的数据具体看模型，模型（GCMAssetModel）里面写的很清楚
             [videoModelArray addObject:videoModel];
         }
     }];
     [self presentViewController:picker animated:YES completion:nil];
 }
+
+
+
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
