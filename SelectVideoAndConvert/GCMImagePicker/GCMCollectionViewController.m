@@ -76,10 +76,10 @@ static NSString * const reuseIdentifier = @"Cell";
             model.isImage = NO;
             [self.assetModels addObject:model];
         }else{
-//            model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
-//            model.imageURL = asset.defaultRepresentation.url;
-//            model.isImage = YES;
-//            [self.assetModels addObject:model];
+            model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
+            model.imageURL = asset.defaultRepresentation.url;
+            model.isImage = YES;
+            [self.assetModels addObject:model];
         }
         
     }];

@@ -30,7 +30,7 @@
     //设置属性
     
     
-    [group setAssetsFilter:[ALAssetsFilter allVideos]];
+    [group setAssetsFilter:[ALAssetsFilter allAssets]];
     
     
     
