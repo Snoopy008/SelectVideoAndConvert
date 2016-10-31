@@ -7,30 +7,29 @@ Sorry,一直没来得及写说明文档，导致加了很多同行的QQ。
 
 每个人的需求会不一样，这也是我没把它做成framework的原因
 
-在GCMGroupCell.m里，allAssets代表所有相册文件，allPhotos代表所有图片，allVideos代表所有视频*/
+在GCMGroupCell.m里，allAssets代表所有相册文件，allPhotos代表所有图片，allVideos代表所有视频
 ```
  [group setAssetsFilter:[ALAssetsFilter allAssets]];
 ```
 在GCMCollectionViewController.m里，只需要注意这个方法，根据需要把对应的注释掉
 ```
 - (void)setGroup:(ALAssetsGroup *)group{
-_group = group;
-[group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
-if (asset == nil) return ;
-GCMAssetModel *model = [[GCMAssetModel alloc] init];
-if (![[asset valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto]) {//不是图片
-model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
-model.imageURL = asset.defaultRepresentation.url;
-model.isImage = NO;
-[self.assetModels addObject:model];
-}else{//图片
-model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
-model.imageURL = asset.defaultRepresentation.url;
-model.isImage = YES;
-[self.assetModels addObject:model];
-}
-
-}];
+    _group = group;
+    [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
+    if (asset == nil) return ;
+    GCMAssetModel *model = [[GCMAssetModel alloc] init];
+    if (![[asset valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypePhoto]) {//不是图片
+        model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
+        model.imageURL = asset.defaultRepresentation.url;
+        model.isImage = NO;
+        [self.assetModels addObject:model];
+    }else{//图片
+        model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
+        model.imageURL = asset.defaultRepresentation.url;
+        model.isImage = YES;
+        [self.assetModels addObject:model];
+        }
+    }];
 
 }
 ```
