@@ -1,5 +1,5 @@
 # SelectVideoAndConvert
-视频选取并压缩
+
 Sorry,一直没来得及写说明文档，导致加了很多同行的QQ。
 
 
@@ -7,10 +7,12 @@ Sorry,一直没来得及写说明文档，导致加了很多同行的QQ。
 
 每个人的需求会不一样，这也是我没把它做成framework的原因
 
-/*在GCMGroupCell.m里，allAssets代表所有相册文件，allPhotos代表所有图片，allVideos代表所有视频*/
+在GCMGroupCell.m里，allAssets代表所有相册文件，allPhotos代表所有图片，allVideos代表所有视频*/
+```
  [group setAssetsFilter:[ALAssetsFilter allAssets]];
-
-/*在GCMCollectionViewController.m里，只需要注意这个方法，根据需要把对应的注释掉*/
+```
+在GCMCollectionViewController.m里，只需要注意这个方法，根据需要把对应的注释掉
+```
 - (void)setGroup:(ALAssetsGroup *)group{
 _group = group;
 [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
@@ -31,7 +33,7 @@ model.isImage = YES;
 }];
 
 }
-
+```
 视频压缩部分我就不做解说了，简书上对应有所说明
 
 注：视频上传部分代码里没有，不过我已经将你所需要上传data放在Model里了，你拿着Model和接口对接一下就可以了。
