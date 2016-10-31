@@ -75,7 +75,7 @@ static NSString * const reuseIdentifier = @"Cell";
             model.imageURL = asset.defaultRepresentation.url;
             model.isImage = NO;
             [self.assetModels addObject:model];
-        }else{
+        }else{//图片
             model.thumbnail = [UIImage imageWithCGImage:asset.thumbnail];
             model.imageURL = asset.defaultRepresentation.url;
             model.isImage = YES;

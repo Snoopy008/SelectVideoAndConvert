@@ -30,7 +30,7 @@
     //设置属性
     
     
-    [group setAssetsFilter:[ALAssetsFilter allAssets]];
+    [group setAssetsFilter:[ALAssetsFilter allVideos]];//这里区分是所有相册文件还是图片或视频
     
     
     
