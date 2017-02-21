@@ -48,6 +48,7 @@
             [videoModel convertVideoWithModel:videoModel];
             
             //所有数据都在模型数组里，想要的数据具体看模型，模型（GCMAssetModel）里面写的很清楚
+            //解码是异步的，但指针始终指向videoModel这个对象，所以在这边打印fileData可能为null,这是正常现象，过十几秒fileData就有数据了。
             [videoModelArray addObject:videoModel];
         }
     }];
